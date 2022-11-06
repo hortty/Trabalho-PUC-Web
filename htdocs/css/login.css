@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{margin:0;padding:0;box-sizing: border-box;} 
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imgs/bg-secao-01.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+header {
+  padding: 20px 0;
+  margin: 0;
+  border: none;
+  background-color: black;
+
+}
+
+nav {
+  display: flex;
+  padding: 0 100px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-menu{
+  width: 240px;
+  height: 60px;
+  margin: 150px;
+}
+
+.secao-1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.login{
+    background-color: #1F1F1F;
+    border-radius: 25px;
+    min-width: 400px;
+    padding: 50px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    font-size: 28px;
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+form input[type=text],
+form input[type=password]{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 25px;
+    margin: 5px 0;
+}
+
+form button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(196, 132, 255)
+}
+
+form button{
+    padding: 10px 0px;
+    color: black;
+    font-size: 12pt;
+    font-weight: 800;
+    background-color: #8a2be2;
+    margin: 25px 0 25px 0;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+}
+
+form h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: 400;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.voltar{
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey;
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #8a2be2;
+border-radius: 10px;
+}

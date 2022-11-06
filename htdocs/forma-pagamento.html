@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/forma-pagamento.css">
+    <script src="js/pagamento.js" defer></script>
+    <title>Seu Carrinho</title>
+</head>
+<body>
+    <header>
+        <h2 class="slogan">Uma Infinidade de Jogos!</h2>
+        <nav class="menu">
+            <a class="logo-menu" href="index.html"><img class="logo-menu" src="imgs/logo-gaminfinity-store-gradiente.webp" alt="logo"></a>
+            <a class="link-produtos" href="produtos.html">Loja</a>
+            <a class="link-carrinho" href="carrinho.html"><img class="carrinho-menu"src="imgs/+cone-Carrinho-de-Compras-preto.webp" alt="Carrinho-de-compras"></a>
+        </nav>
+    </header>
+    <main>
+
+        <h2> Finalize seu pedido </h2>
+
+        <div class="container-forma-pag">
+
+            <div class="lista-forma-pag">
+                <ul>
+                    <li onclick="clicarPix()">
+                        <img src="imgs/ico-pix.webp" alt="pix" height="40px" width="40px">
+                        PIX
+                    </li>
+                    <li onclick="clicarCartao()">
+                        <img src="imgs/ico-cartao-credito.webp" alt="pix" height="40px" width="40px">
+                        CARTÃO DE CRÉDITO
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-pag hidden" id="container-pag">
+                
+                <div id="pix-container">
+                    <div id="perguntaPix" class="hidden">
+                        <h1 id="confirmacaoPix" >Deseja realmente pagar com PIX?</h1>
+                        <form id="forma-pagamento">
+                            <input type="radio" class="hidden" id="pagamento-pix" name="pagamento" value="pix">
+                            <button type="button" class="confirmar-pix" onclick="confirmarPix()">Confirmar</button>
+                        </form>
+                    </div>
+                    <div class="div-pag hidden" id="pix">
+                        <h2>Pix</h2>
+    
+                        <img src="imgs/qrcode.png" width="400px" height="400px">
+                        <br>
+                        <h1 id="qrnumber"></h1>
+    
+                    </div>
+                </div>
+
+                <div class="div-pag hidden" id="cartao">
+                    <h2>Cartão de crédito</h2>
+                    <p>
+                        A Gaminfinity STORE aceita as bandeiras de cartão VISA, MasterCard, ELO, HiperCard, American Express e Diners.
+                    </p><br>
+
+                    <div class="dados-pagamento">
+                        <p>Insira seus dados para realizar o pagamento </p>
+                        <form action="" id="form-pagamento">
+                            <input type="radio" class="hidden" id="pagamento-cartao" name="pagamento" value="cartao">
+                            <input type="text" placeholder="NOME" id="nome">
+                            <input type="text" placeholder="SOBRENOME" id="sobrenome">
+                            <input type="text" placeholder="000.000.000-00" name="cpf" id="cpf">
+                            <input type="text" placeholder="Número de cartão" id="numero-cartao">
+                            <input type="text" placeholder="CVV" id="cvv">
+                            <br>
+                            <button type="button" onclick="efetuarPagamentoCartao()">Enviar</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    
+    </main>
+</body>
+</html>

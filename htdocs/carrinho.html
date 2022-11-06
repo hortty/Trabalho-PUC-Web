@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <script src="js/carrinho.js" defer></script>
+    <title>Seu Carrinho</title>
+</head>
+<body>
+    <header>
+        <h2 class="slogan">Uma Infinidade de Jogos!</h2>
+        <nav class="menu">
+            <a class="logo-menu" href="index.html"><img class="logo-menu" src="imgs/logo-gaminfinity-store-gradiente.webp" alt="logo"></a>
+            <a class="link-produtos" href="produtos.html">Loja</a>
+            <a class="link-carrinho" href="carrinho.html"><img class="carrinho-menu"src="imgs/+cone-Carrinho-de-Compras-preto.webp" alt="Carrinho-de-compras"></a>
+        </nav>
+    </header>
+    <main>
+
+        <h2> Seu Carrinho </h2>
+
+        <div class="container-carrinho hidden" id="container-carrinho">
+
+            <div class="tabela-carrinho">
+                <table class="carrinho">
+
+                    <thead>
+                        <th class="headerTabela">Produto</th>
+                        <th class="headerTabela">Nome</th>
+                        <th class="headerTabela">Preço</th>
+                    </thead>
+
+                    <tbody id="tbody">
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="container-checkout">
+                
+                <div>
+                    <h3>Resumo do pedido</h3>
+                    <hr>
+                    <div class="item-valor">
+                        <p id = "quantidadeItens"></p>
+                        <p id = "valorItens"></p>
+                    </div>
+                </div>
+
+                <div class="cupom">
+                    <h3 style="margin-top: 30px">Código Promocional</h3>
+                    <input type="text" id = "limparCupom">
+                    <button type="button" onclick="limparCupom()">Aplicar Cupom</button>
+                </div>
+                <div class="finalizar-compra">
+                    <hr>
+                    <a href="forma-pagamento.html"><button onclick="finalizarCompra()">Finalizar Compra</button></a>
+                </div>
+            </div>
+
+        </div>
+    
+    </main>
+</body>
+</html>
